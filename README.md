@@ -9,3 +9,5 @@ For more Information you can check out, https://en.wikipedia.org/wiki/Game_of_th
 ![ss](Capture.PNG)
 
 ![ss2](Capture2.PNG)
+
+<h1 href="https://rathoddeven.github.io/"> Click here to Play..!</h1>
