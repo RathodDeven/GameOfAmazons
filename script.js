@@ -16,6 +16,10 @@ const board = [
     null,null,null,7,null,null,8,null,null,null
 ]
 
+let move_audio = new Audio('Piece_Move_sound.mp3');
+move_audio.volume = 0.3
+let block_audio = new Audio('Block_Move_sound.mp3');
+block_audio.volume = 0.3
 
 // DOM references
 
@@ -293,7 +297,7 @@ function makeMoveForBlock(number){
     removeCellonClick();
     secondmove = false;
     checkForWin();
-    
+    block_audio.play();
 }
 function checkForWin(){
     let temp_flag;
@@ -381,6 +385,8 @@ function makeMove(number){
         blackPieces = document.querySelectorAll(".black-piece");
         
     }
+    move_audio.play()
+
     removeCellonClick();
     removeEventListeners();
     updateavailablemoves(number);
